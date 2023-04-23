@@ -1,0 +1,27 @@
+body {
+    background: #FFFFE3;
+    color: #253A52;
+    padding: 25px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+#profile-picture {
+    width: 320px;
+    border-radius: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFE3;
+    background-color: #1348DA;
+    padding: 0 1rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+

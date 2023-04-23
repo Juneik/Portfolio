@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
@@ -17,11 +18,26 @@
         </nav>
     </header>
     <main>
+        <div>
+            <label for="dark-mode-button">Dark mode</label>
+            <input type="checkbox" id="dark-mode-button" name="dark-mode-button">
+            <div class="button-border">
+                <div class="button-circle"></div>
+            </div>
+        </div>
         <section>
-            <img src="./Resources/Paul Picture.png" alt="Paul's picture">
+            <img src="./Resources/Placeholder.jpg" alt="Paul's picture" id="profile-picture">
             <h2>Hello! My name is Paul Ramirez. I'm a web developer and data analyst.</h2>
-            <p></p>
+            <p>I've been learning about the world of programming since 2022. I don't have much experience yet, but I'm currently working on web development projects using HTML, CSS & JS. In my free time I enjoy playing the guitar, exercising and playing videogames.</p>
+            <a href="https://github.com/Juneik?tab=repositories" target="blank">See my work</a>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>No projects yet</h3>
+            </article>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>

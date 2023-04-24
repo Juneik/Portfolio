@@ -8,30 +8,31 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header-grid">
         <h1>Paul Ramirez</h1>
         <nav>
-            <ul>
+            <ul class="nav-grid">
                 <li>Work</li>
                 <li>Contact</li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <label for="dark-mode-button">Dark mode</label>
+        <div class="dark-mode-grid">
+            <div id="empty-div"></div>
+            <label for="dark-mode-button" class="toggle-switch">Dark Mode</label>
             <input type="checkbox" id="dark-mode-button" name="dark-mode-button">
-            <div class="button-border">
-                <div class="button-circle"></div>
+            <div class="toggle-switch-border">
+                <div class="toggle-switch-dot"></div>
             </div>
         </div>
-        <section>
+        <section class="greeting-grid">
             <img src="./Resources/Placeholder.jpg" alt="Paul's picture" id="profile-picture">
             <h2>Hello! My name is Paul Ramirez. I'm a web developer and data analyst.</h2>
             <p>I've been learning about the world of programming since 2022. I don't have much experience yet, but I'm currently working on web development projects using HTML, CSS & JS. In my free time I enjoy playing the guitar, exercising and playing videogames.</p>
             <a href="https://github.com/Juneik?tab=repositories" target="blank">See my work</a>
         </section>
-        <section>
+        <section class="projects-grid">
             <h2>Projects</h2>
             <article>
                 <h3>No projects yet</h3>

@@ -78,12 +78,16 @@ a {
     border-color: #1348DA;
     border-style: dashed;
     margin-bottom: 1rem;
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: 8fr 5rem;
+    padding: 0;
 }
 
 .dark-mode-grid #empty-div {
     border-style: dashed;
     border-color: aqua;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -94,20 +98,28 @@ a {
     border-radius: 200px;
     box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
-    height: 100%;
+    height: 2rem;
     width: 90%;
 }
-/* Issue here
+
 
 .dark-mode-grid label:after {
     content:"";
-    width: 85%;
+    float: left;
+    width: 38%;
     height: 85%;
-    background: linear-gradient(180deg, #FFCC89, #D8860B);
+    margin-left: 4%;
+    margin-top: 4%;
+    background: linear-gradient(180deg, #253A52, #253A52);
     border-radius: 180px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-*/
+
+.dark-mode-grid input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
 
 .greeting-grid {
     display: grid;

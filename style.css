@@ -1,12 +1,23 @@
 /* General styling */
 
 body {
-    background: #FFFFE3;
-    color: #253A52;
+    background: var(--light-background);
+    color: var(--light-primary);
     padding: 0 1rem;
     font-family: "Sora", sans-serif;
     max-width: 1024px;
     margin: 0 auto;
+
+    --light-background: #FFFFE3;
+    --light-primary: #253A52;
+    --light-link: #1348DA;
+
+    --dark-background: #253A52;
+    --dark-primary: #FFFFE3;
+    --dark-link: #A9FE75;
+
+    --toggle-color-change: #253A52;
+
 }
 
 h2 {
@@ -20,8 +31,8 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #FFFFE3;
-    background-color: #1348DA;
+    color: var(--light-background);
+    background-color: var(--light-link);
     padding: 0 1rem;
     height: 2.5rem;
     display: inline-flex;
@@ -43,7 +54,7 @@ a {
     margin-bottom: 1rem;
     grid-template-columns: 4fr 1fr;
     padding: 0;
-    border-bottom: #253A52 solid 2px;
+    border-bottom: var(--light-primary) solid 1px;
 }
 
 .nav-grid {
@@ -75,51 +86,65 @@ a {
     display: grid;
     height: 2rem;
     width: 100%;
-    border-color: #1348DA;
-    border-style: dashed;
     margin-bottom: 1rem;
     grid-template-columns: 8fr 5rem;
     padding: 0;
 }
 
-.dark-mode-grid #empty-div {
-    border-style: dashed;
-    border-color: aqua;
+#dark-mode-text {
     height: 2rem;
-    margin: 0;
-    padding: 0;
+    padding: 0.5rem;
+    float: right;
+    font-weight: bold;
 }
 
 
-.dark-mode-grid label {
-    border-style: dashed;    
-    border-color: aqua;
-    background: #FFFFE3;
+.toggle-switch {
+    border-style: solid;    
+    border-color: var(--light-primary);
+    border-width: 1px;
+    background: var(--light-background);
     border-radius: 200px;
     box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     height: 2rem;
     width: 90%;
+    transition: 0.3s;
 }
 
 
-.dark-mode-grid label:after {
+.toggle-switch:after {
     content:"";
     float: left;
     width: 38%;
     height: 85%;
     margin-left: 4%;
     margin-top: 4%;
-    background: linear-gradient(180deg, #253A52, #253A52);
+    background: linear-gradient(180deg, var(--toggle-color-change), var(--toggle-color-change));
     border-radius: 180px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-.dark-mode-grid input {
+#dark-mode-button:checked + .toggle-switch:after {
+    transform: translateX(2.4rem);
+} 
+
+#dark-mode-button:not(:checked) + .toggle-switch:active:after {
+    width: 2.5rem;
+}
+
+#dark-mode-button:checked + .toggle-switch:active:after {
+    width: 2.5rem;
+    transform: translateX(1.6rem);
+}
+
+#dark-mode-button {
     width: 0;
     height: 0;
     visibility: hidden;
-}
+    position: absolute;
+} 
 
 .greeting-grid {
     display: grid;

@@ -28,7 +28,8 @@ toggle.onclick = () => {
         toggleSwitchStyle.backgroundColor = lightPrimaryColor
         toggleSwitchStyle.borderColor = darkPrimaryColor
         toggleSwitchStyle.boxShadow = 'inset 0px 5px 15px rgba(255, 255, 255, 0.4), inset 0px -5px 15px rgba(0, 0, 0, 0.4)'
-        bodyStyle.setProperty('--toggle-color-change', darkPrimaryColor) 
+        bodyStyle.setProperty('--toggle-color-change', darkPrimaryColor)
+        bodyStyle.setProperty('--link-button-color-change', darkPrimaryColor) 
         darkModeText.innerHTML = 'Light mode'
     } else {
         bodyStyle.color = lightPrimaryColor
@@ -40,6 +41,7 @@ toggle.onclick = () => {
         toggleSwitchStyle.borderColor = lightPrimaryColor
         toggleSwitchStyle.boxShadow = 'inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4)'
         bodyStyle.setProperty('--toggle-color-change', lightPrimaryColor)
+        bodyStyle.setProperty('--link-button-color-change', lightPrimaryColor) 
         darkModeText.innerHTML = 'Dark mode'
     }
 }

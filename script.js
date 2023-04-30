@@ -10,7 +10,7 @@ const lightLinkColor = getComputedStyle(document.body).getPropertyValue('--light
 // Set variables for the different elements that must change color for dark and light theme
 
 const bodyStyle = document.body.style
-const linkStyle = document.querySelector('a').style
+const linkStyle = document.getElementById('link-button').style
 const headerGridStyle = document.querySelector('.header-grid').style
 const toggleSwitchStyle = document.querySelector('.toggle-switch').style
 const darkModeText = document.getElementById('dark-mode-text')

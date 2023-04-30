@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
     <title>Contact</title>
+    <script src="https://kit.fontawesome.com/2876182e1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header-grid">
@@ -18,6 +19,77 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="dark-mode-grid">
+            <div>
+                <span id="dark-mode-text">Dark mode</span>
+            </div>
+            <input type="checkbox" id="dark-mode-button" name="dark-mode-button">
+            <label for="dark-mode-button" class="toggle-switch"></label>
+            <div class="toggle-switch-border">
+                <div class="toggle-switch-dot"></div>
+            </div>
+        </div>
+        <form id="grid-form">
+            <h2 class="test" id="form-a">Do you want to get in contact with me?</h2>
+            <p class="test" id="form-b">Enter your contact details below</p>
+            <span class="test" id="form-c">Name</span>
+            <div class="test" id="form-d">
+                <input type="text" required name="first-name" id="first-name">
+                <br>
+                <label for="first-name">First name</label>
+            </div>
+            <div class="test" id="form-e">
+                <input type="text" required name="last-name" id="last-name">
+                <br>
+                <label for="last-name">Last name</label>
+            </div>
+            <div class="test" id="form-f">
+                <label for="email">Email address</label>
+                <br>
+                <input type="email" required name="email" id="email">
+            </div>
+            <div class="test" id="form-g">   
+                <label for="phone">Phone number</label>
+                <br>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <fieldset class="test" id="form-h">
+                <legend>What language do you speak?</legend>
+                <div>
+                    <label for="spanish">Spanish</label>
+                    <input type="radio" required name="language" id="spanish" value="spanish">
+                    <label for="english">English</label>
+                    <input type="radio" required name="language" id="english" value="english">
+                </div>
+            </fieldset>
+            <div class="test" id="form-i">
+                <label for="question">How can I help you?</label>
+                <br>
+                <textarea type="textarea" required name="question" id="question" rows="5" cols="33"></textarea>
+            </div>
+            <input class="test" id="form-j" type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">CV 
+                    <span class="link-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">GitHub
+                  <span class="link-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">© 2023 Paul Tirado</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

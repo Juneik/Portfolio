@@ -10,10 +10,13 @@ const lightLinkColor = getComputedStyle(document.body).getPropertyValue('--light
 // Set variables for the different elements that must change color for dark and light theme
 
 const bodyStyle = document.body.style
-const linkStyle = document.getElementById('link-button').style
+const submitStyle = document.getElementById('form-j').style
+const extraLinkStyle = document.querySelectorAll('.link-icon')[0].style
+const extraLinkStyle2 = document.querySelectorAll('.link-icon')[1].style
 const headerGridStyle = document.querySelector('.header-grid').style
 const toggleSwitchStyle = document.querySelector('.toggle-switch').style
 const darkModeText = document.getElementById('dark-mode-text')
+const gridFormStyle = document.getElementById('grid-form').style
 
 // Define event with function to change theme
 
@@ -22,8 +25,12 @@ toggle.onclick = () => {
     if (toggle.checked) {
         bodyStyle.color = darkPrimaryColor
         bodyStyle.backgroundColor = darkBackgroundColor
-        linkStyle.backgroundColor = darkLinkColor
-        linkStyle.color = lightPrimaryColor
+        submitStyle.backgroundColor = darkLinkColor
+        submitStyle.color = lightPrimaryColor
+        extraLinkStyle.color = lightPrimaryColor
+        extraLinkStyle.backgroundColor = darkLinkColor
+        extraLinkStyle2.color = lightPrimaryColor
+        extraLinkStyle2.backgroundColor = darkLinkColor
         headerGridStyle.borderBottom = `${darkPrimaryColor} solid 1px`
         toggleSwitchStyle.backgroundColor = lightPrimaryColor
         toggleSwitchStyle.borderColor = darkPrimaryColor
@@ -31,11 +38,16 @@ toggle.onclick = () => {
         bodyStyle.setProperty('--toggle-color-change', darkPrimaryColor)
         bodyStyle.setProperty('--link-button-color-change', darkPrimaryColor) 
         darkModeText.innerHTML = 'Light mode'
+        gridFormStyle.border = 'thick double'
     } else {
         bodyStyle.color = lightPrimaryColor
         bodyStyle.backgroundColor = lightBackgroundColor
-        linkStyle.backgroundColor = lightLinkColor
-        linkStyle.color = darkPrimaryColor
+        submitStyle.backgroundColor = lightLinkColor
+        submitStyle.color = darkPrimaryColor
+        extraLinkStyle.color = darkPrimaryColor
+        extraLinkStyle.backgroundColor = lightLinkColor
+        extraLinkStyle2.color = darkPrimaryColor
+        extraLinkStyle2.backgroundColor = lightLinkColor
         headerGridStyle.borderBottom = `${lightPrimaryColor} solid 1px`
         toggleSwitchStyle.backgroundColor = darkPrimaryColor
         toggleSwitchStyle.borderColor = lightPrimaryColor
@@ -45,5 +57,3 @@ toggle.onclick = () => {
         darkModeText.innerHTML = 'Dark mode'
     }
 }
-
-

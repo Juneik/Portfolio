@@ -31,65 +31,64 @@
             </div>
         </div>
         <form id="grid-form">
-            <h2 class="test" id="form-a">Do you want to get in contact with me?</h2>
-            <p class="test" id="form-b">Enter your contact details below</p>
-            <span class="test" id="form-c">Name</span>
-            <div class="test" id="form-d">
+            <h2 class="grid-item" id="form-a">Do you want to get in contact with me?</h2>
+            <p class="grid-item" id="form-b">Enter your contact details below:</p>
+            <span class="grid-item" id="form-c">Name</span>
+            <div class="grid-item" id="form-d">
                 <input type="text" required name="first-name" id="first-name">
                 <br>
                 <label for="first-name">First name</label>
             </div>
-            <div class="test" id="form-e">
+            <div class="grid-item" id="form-e">
                 <input type="text" required name="last-name" id="last-name">
                 <br>
                 <label for="last-name">Last name</label>
             </div>
-            <div class="test" id="form-f">
+            <div class="grid-item" id="form-f">
                 <label for="email">Email address</label>
                 <br>
                 <input type="email" required name="email" id="email">
             </div>
-            <div class="test" id="form-g">   
+            <div class="grid-item" id="form-g">   
                 <label for="phone">Phone number</label>
                 <br>
                 <input type="tel" name="phone" id="phone">
             </div>
-            <fieldset class="test" id="form-h">
-                <legend>What language do you speak?</legend>
+            <div class="grid-item" id="form-h">
+                <p>What language do you speak?</p>
                 <div>
                     <label for="spanish">Spanish</label>
                     <input type="radio" required name="language" id="spanish" value="spanish">
                     <label for="english">English</label>
                     <input type="radio" required name="language" id="english" value="english">
                 </div>
-            </fieldset>
-            <div class="test" id="form-i">
-                <label for="question">How can I help you?</label>
-                <br>
-                <textarea type="textarea" required name="question" id="question" rows="5" cols="33"></textarea>
             </div>
-            <input class="test" id="form-j" type="submit" value="Submit">
+            <div class="grid-item" id="form-i">
+                <label for="question">How can I help you?</label>
+                <textarea type="textarea" required name="question" id="question" rows="5" cols="80"></textarea>
+            </div>
+            <input class="grid-item" id="form-j" type="submit" value="Submit">
         </form>
     </main>
     <footer>
         <ul>
-            <li>
-                <a href="#">CV 
+            <li class="extra-links">
+                <a class="link-name" href="#">CV 
                     <span class="link-icon">
                         <i class="fa-solid fa-user"></i>
                     </span>
                 </a>
             </li>
-            <li>
-                <a href="#">GitHub
-                  <span class="link-icon">
+            <li class="extra-links">
+                <a class="link-name" href="https://github.com/Juneik?tab=repositories" target="_blank">GitHub
+                  <span class="link-icon"> 
                     <i class="fa-brands fa-github"></i>
                   </span>
                 </a>
             </li>
         </ul>
-        <p class="copyright">© 2023 Paul Tirado</p>
+        <p class="copyright">© 2023 Paul Ramirez</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./contactButton.js"></script>
 </body>
 </html>

@@ -331,41 +331,7 @@ footer ul {
 
 /* Responsiveness */
 
-@media only screen and (max-width: 480px) {
-    .header-grid h1 {
-        font-size: 1rem;
-    }
-
-    .copyright {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 0;
-        text-align: center;
-    }
-
-    #form-a {
-        font-size: 1.5rem;
-    }
-
-    .grid-item {
-        font-size: 1rem;
-    }
-
-    #label-first-name, #label-last-name {
-        visibility: hidden;
-    }
-
-    #form-d input::placeholder, #form-e input::placeholder {    
-        visibility: visible;
-    }
-
-    #form-j {
-        width: 75%;
-    }
-}
-
-@media only screen and (min-width: 720px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     #form-a {
         font-size: 1.8rem;
     }
@@ -375,7 +341,7 @@ footer ul {
     }
 }
 
-@media only screen and (min-width:480px) and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
     .greeting-grid {
         display: grid;
         max-width: 100%;
@@ -420,10 +386,6 @@ footer ul {
         font-size: 1rem;
     }
 
-    #form-a {
-        font-size: 1.8rem;
-    }
-
     #label-first-name, #label-last-name {
         visibility: hidden;
     }
@@ -434,5 +396,15 @@ footer ul {
 
     #form-j {
         width: 75%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-grid h1 {
+        font-size: 1rem;
+    }
+
+    #form-a {
+        font-size: 1.5rem;
     }
 }
